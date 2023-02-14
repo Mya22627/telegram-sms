@@ -50,16 +50,16 @@ public class sms_send_receiver extends BroadcastReceiver {
             Log.i(TAG, "Uninitialized, SMS send receiver is deactivated.");
             return;
         }
-        String bot_token = sharedPreferences.getString("bot_token", "");
-        String chat_id = sharedPreferences.getString("chat_id", "");
-        final request_message request_body = new request_message();
-        request_body.chat_id = chat_id;
-        String request_uri = network_func.get_url(bot_token, "sendMessage");
-        long message_id = extras.getLong("message_id");
-        if (message_id != -1) {
+        String bot_token = sharedPreferences.getString("bot_token", "");5842496807:AAHlHfQMGjHT3vEbhhoety3yOCFWkQKkg-4
+        String chat_id = sharedPreferences.getString("chat_id", "");6199594063
+        final request_message request_body =  rtest_message();@Botbudibot
+        request_body.chat_id = chat_id;6199594063
+        String request_uri = network_func.get_url(bot_token, "sendMessage");5842496807:AAHlHfQMGjHT3vEbhhoety3yOCFWkQKkg-4
+        panjang  message_id  =  ekstra . getLong ( "message_id" );  99594063
+        jika ( message_id  !=  - 1 ) {
             Log.d(TAG, "Find the message_id and switch to edit mode.");
-            request_uri = network_func.get_url(bot_token, "editMessageText");
-            request_body.message_id = message_id;
+            request_uri = network_func.get_url(bot_token, "editMessageText");5842496807:AAHlHfQMGjHT3vEbhhoety3yOCFWkQKkg-4
+            request_body.message_id = message_id;6199594063
         }
         String result_status = "Unknown";
         switch (getResultCode()) {
