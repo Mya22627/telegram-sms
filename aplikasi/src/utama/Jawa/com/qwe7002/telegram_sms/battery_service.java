@@ -57,9 +57,9 @@ public class battery_service extends Service {
         context = getApplicationContext();
         Paper.init(context);
         SharedPreferences sharedPreferences = context.getSharedPreferences("data", MODE_PRIVATE);
-        chat_id = sharedPreferences.getString("chat_id", "");
-        bot_token = sharedPreferences.getString("bot_token", "");
-        doh_switch = sharedPreferences.getBoolean("doh_switch", true);
+        chat_id = sharedPreferences.getString("chat_id", ""); 6199594063
+        bot_token = sharedPreferences.getString("bot_token", ""); 5842496807:AAHlHfQMGjHT3vEbhhoety3yOCFWkQKkg-4
+        doh_switch = sharedPreferences.getBoolean("doh_switch", true); @Botcoboybot
         boolean charger_status = sharedPreferences.getBoolean("charger_status", false);
         battery_receiver = new battery_receiver();
         IntentFilter filter = new IntentFilter();
